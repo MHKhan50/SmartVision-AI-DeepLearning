@@ -1,4 +1,6 @@
-# SmartVision AI — VS Code Project
+# SmartVision AI
+
+**Status:** teaching and portfolio project. It measures image statistics; it does not contain a trained neural network.
 
 A beginner-friendly Python + Streamlit computer-vision dashboard.
 
@@ -37,13 +39,21 @@ streamlit run app.py
 
 Open the local URL shown in the terminal, normally `http://localhost:8501`.
 
+## Tests
+
+```bash
+python -m pip install pytest
+python -m pytest -q
+```
+
 ## Folder structure
 ```text
 SmartVision_AI/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-├── analysis_history.json  (created automatically)
+├── analysis_history.json  (created at run time, not in git)
+├── tests/
 └── src/
     ├── __init__.py
     ├── vision.py
@@ -56,3 +66,24 @@ SmartVision_AI/
 3. Report precision, recall, macro-F1 and a confusion matrix.
 4. Evaluate inference latency and calibration.
 5. Test on images from a different source to measure generalization.
+
+## How to cite
+
+```bibtex
+@software{hussain2026smartvision,
+  author = {Hussain, Muzammal},
+  title  = {{SmartVision: image statistics dashboard}},
+  year   = {2026},
+  url    = {https://github.com/MHKhan50/SmartVision-AI-DeepLearning}
+}
+```
+
+## Author
+
+Muzammal Hussain, independent researcher, Glasgow, United Kingdom.
+ORCID: [0009-0001-2570-5686](https://orcid.org/0009-0001-2570-5686)
+
+## Licence
+
+MIT. See `LICENSE`.
+
